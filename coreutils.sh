@@ -1,5 +1,8 @@
 cat(){
-  echo "$(<$1)"
+  for file in "$@"
+  do
+    echo "$(<$file)"
+  done
 }
 cp(){
   cat $1 >$2
