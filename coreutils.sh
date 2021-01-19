@@ -7,3 +7,6 @@ cp(){
 empty(){
   echo -n "" >$1
 }
+ls(){
+  echo *
+}
