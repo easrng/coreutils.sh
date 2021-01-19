@@ -8,5 +8,10 @@ empty(){
   echo -n "" >$1
 }
 ls(){
-  echo *
+  if [ -n "$1" ]
+  then
+    echo $1/*
+  else
+    echo *
+  fi
 }
